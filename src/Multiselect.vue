@@ -338,8 +338,8 @@ export default {
       ) {
         // Hide input by setting the width to 0 allowing it to receive focus
         return this.isOpen
-          ? { width: '100%' }
-          : { width: '0', position: 'absolute', padding: '0' }
+          ? { width: '100%', fontSize: '13px' }
+          : { width: '0', position: 'absolute', padding: '0', fontSize: '13px' }
       }
       return ''
     },
@@ -429,7 +429,7 @@ fieldset[disabled] .multiselect {
 .multiselect__input,
 .multiselect__single {
   font-family: inherit;
-  font-size: 16px;
+  font-size: 13px;
   touch-action: manipulation;
 }
 
@@ -532,7 +532,7 @@ fieldset[disabled] .multiselect {
   border-radius: 5px;
   border: 1px solid #e8e8e8;
   background: #fff;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .multiselect__tag {
@@ -570,7 +570,7 @@ fieldset[disabled] .multiselect {
 .multiselect__tag-icon:after {
   content: "×";
   color: #266d4d;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .multiselect__tag-icon:focus,
